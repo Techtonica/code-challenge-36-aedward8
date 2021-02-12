@@ -7,9 +7,13 @@
 // 1. make_tags('cite', 'Yay') → '<cite>Yay</cite>'
 
 function make_tags(input_tag, input_string){
-  // Add functionality here!
-  return
+
+  return '<'+input_tag+'>'+input_string+'</'+input_tag+'>';
 }
 
 
 module.exports = make_tags;
+
+console.log(make_tags('i', 'Yay')) //→ '<i>Yay</i>'
+console.log(make_tags('i', 'Hello')) //→ '<i>Hello</i>'
+console.log(make_tags('cite', 'Yay'))// → '<cite>Yay</cite>'
